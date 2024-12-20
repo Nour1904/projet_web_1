@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sur le Football</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fb;
+            color: #333;
+        }
+
+        /*el partie foukaniya eli maktoub fiha mon parcours académique*/
+        header {
+            background-color: #652e70;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+
+       /*  le cadre  */
+        .container {
+            max-width: 1000px;
+            margin: 10px auto;/*une marge de 10 pixels en haut et en bas de l'élément.
+                               Centrage horizontal automatique */
+        }
+        
+
+        .question {
+            gap: 20px;/*l'espace entre chaque cadre */
+            background-color: #fff;
+            border-radius: 8px;/*Arrondit les coins du cadres*/
+            padding: 20px;/* les marges intérieures*/
+            margin-bottom: 20px;/* les marges extérieures*/
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);/*Ajoute une ombre portée à l'image
+                                                         (Décalage horizontal,Décalage vertical,flou)*/
+        
+        }
+
+
+        /*question*/
+        .question label {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 1em;
+            display: block;
+        }
+
+
+        /*bouton valider le quiz*/
+        .btn-submit {
+            display: inline-block;
+            margin: 10px 50px 20px 420px  ;
+            text-align: center;
+            background: #1e3c72;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+
+        
+        #results {
+            margin-top: 2rem;
+            padding: 2rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            display: none;
+        }
+
+        #results h3 {
+            font-size: 1.8rem;
+            color: #0056b3;
+        }
+
+        #results ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #results li {
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+
+        /*Retour à la page d'accueil*/
+        .back-to-home {
+            margin-top: 50px ;
+            padding: 10px 20px;/*espace en haut et en bas 
+                                espace du droite et gauche */
+            background-color: #1d3557;
+            color: #fff;
+            text-decoration: none;/*menghir soulignement de la phrase*/
+            border-radius: 5px;/*Arrondit les coins du cadres*/
+            font-size: 1em;
+            text-align: center;
+        }
+
+
+        /* Couleur bleu clair au survol */
+        .back-to-home:hover {
+            background-color: #457b9d;
+        }
+
+
+        /*okhor partie fel pages */
+        footer {
+            background-color: #652e70;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        Quiz sur le Football
+    </header>
+
+    <div class="container">
+            <form id="quizForm">
+                <div class="question">
+                    <label>1. Quel est le pays d'origine du football ?</label>
+                    <input type="radio" name="q1" value="Angleterre" required> Angleterre<br>
+                    <input type="radio" name="q1" value="Brésil"> Brésil<br>
+                    <input type="radio" name="q1" value="Argentine"> Argentine<br>
+                </div>
+
+            
+                <div class="question">
+                    <label>2. Qui a marqué le plus de buts en Coupe du Monde ?</label>
+                    <input type="radio" name="q2" value="Miroslav Klose" required> Miroslav Klose<br>
+                    <input type="radio" name="q2" value="Pelé"> Pelé<br>
+                    <input type="radio" name="q2" value="Cristiano Ronaldo"> Cristiano Ronaldo<br>
+                </div>
+
+                <div class="question">
+                    <label>3. Combien de joueurs composent une équipe de football sur le terrain ?</label>
+                    <input type="radio" name="q3" value="10" required> 10<br>
+                    <input type="radio" name="q3" value="11"> 11<br>
+                    <input type="radio" name="q3" value="12"> 12<br>
+                </div>
+
+                <div class="question">
+                    <label>4. Quel est le club où Lionel Messi a passé la majeure partie de sa carrière ?</label>
+                    <input type="radio" name="q4" value="Paris Saint-Germain" required> Paris Saint-Germain<br>
+                    <input type="radio" name="q4" value="FC Barcelone"> FC Barcelone<br>
+                    <input type="radio" name="q4" value="Manchester United"> Manchester United<br>
+                </div>
+
+                <div class="question">
+                    <label>5. Qui a remporté la dernière Coupe du Monde (2018) ?</label>
+                    <input type="radio" name="q5" value="France" required> France<br>
+                    <input type="radio" name="q5" value="Brésil"> Brésil<br>
+                    <input type="radio" name="q5" value="Allemagne"> Allemagne<br>
+                </div>
+
+                <div class="question">
+                    <label>6. Qui est l'entraîneur actuel de l'équipe de football de la France ?</label>
+                    <input type="radio" name="q6" value="Didier Deschamps" required> Didier Deschamps<br>
+                    <input type="radio" name="q6" value="Zinedine Zidane"> Zinedine Zidane<br>
+                    <input type="radio" name="q6" value="Michel Platini"> Michel Platini<br>
+                </div>
+
+                <div class="question">
+                    <label>7. Combien de temps dure un match de football standard ?</label>
+                    <input type="radio" name="q7" value="90 minutes" required> 90 minutes<br>
+                    <input type="radio" name="q7" value="60 minutes"> 60 minutes<br>
+                    <input type="radio" name="q7" value="120 minutes"> 120 minutes<br>
+                </div>
+
+                <div class="question">
+                    <label>8. Quel pays a accueilli la Coupe du Monde de Football 2014 ?</label>
+                    <input type="radio" name="q8" value="Brésil" required> Brésil<br>
+                    <input type="radio" name="q8" value="Afrique du Sud"> Afrique du Sud<br>
+                    <input type="radio" name="q8" value="Allemagne"> Allemagne<br>
+                </div>
+
+                <div class="question">
+                    <label>9. Quel joueur a remporté le Ballon d'Or en 2020 ?</label>
+                    <input type="radio" name="q9" value="Lionel Messi" required> Lionel Messi<br>
+                    <input type="radio" name="q9" value="Robert Lewandowski"> Robert Lewandowski<br>
+                    <input type="radio" name="q9" value="Cristiano Ronaldo"> Cristiano Ronaldo<br>
+                </div>
+
+                <div class="question">
+                    <label>10. Quel est le plus grand stade de football au monde ?</label>
+                    <input type="radio" name="q10" value="Maracanã" required> Maracanã<br>
+                    <input type="radio" name="q10" value="Camp Nou"> Camp Nou<br>
+                    <input type="radio" name="q10" value="Rungrado 1er Mai"> Rungrado 1er Mai<br>
+                </div>
+
+                <button type="button" class="btn-submit" onclick="submitQuiz()">Valider le Quiz</button>
+            </form>
+        <div id="results">
+            <h3>Résultats du Quiz</h3>
+            <p id="score"></p>
+            <h4>Réponses Correctes :</h4>
+            <ul id="correctAnswers"></ul>
+        </div>
+
+        <a href="index.html" class="back-to-home">Retour à la page d'accueil</a>
+    </div>
+    
+
+    <script>
+
+        /*Cet objet associe chaque question à sa réponse correcte*/
+        const correctAnswers = {
+            q1: "Angleterre",
+            q2: "Miroslav Klose",
+            q3: "11",
+            q4: "FC Barcelone",
+            q5: "France",
+            q6: "Didier Deschamps",
+            q7: "90 minutes",
+            q8: "Brésil",
+            q9: "Robert Lewandowski",
+            q10: "Rungrado 1er Mai"
+        };
+
+
+        /* + Cette fonction est appelée lorsqu'on soumet le quiz.
+        + Elle vérifie les réponses données par l'utilisateur, 
+        + calcule le score
+        + affiche les résultats
+        + ainsi que les réponses correctes.*/
+        function submitQuiz() {
+            const form = document.getElementById("quizForm");/*variable contient les réponses soumises par l'utilisateur*/
+            const results = document.getElementById("results");/* variable permet d'afficher les résultats une fois le quiz corrigé.*/
+            const scoreElement = document.getElementById("score");/*variable qui contient le score final de l'utilisateur*/
+            const correctAnswersList = document.getElementById("correctAnswers");/*Affiche une liste des réponses correctes pour les questions mal répondues*/
+
+            let score = 0;/* Initialise la variable score à 0*/
+            let totalQuestions = Object.keys(correctAnswers).length;/*trajaha liste w tehseb kadeh fama men element */
+
+            // Vider la liste des réponses correctes
+            correctAnswersList.innerHTML = "";
+
+            // Vérifier les réponses
+            /*Parcourt toutes les clés de l'objet correctAnswers */
+            Object.keys(correctAnswers).forEach((question) =>
+                {const userAnswer = form[question] ? form[question].value : null;/*si l'utilisateur n'a pas répondu au questio
+                                                                                   la valeur par défaut est null.*/
+                if (userAnswer === correctAnswers[question]) {
+                    score++; /*si la reponse est vrai alors on ajout au score +1*/
+                } else {
+                    const li = document.createElement("li");/*cree une nouvel liste  utilisé pour afficher
+                                                             la bonne réponse à une question mal répondue par l'utilisateur.*/
+                    /*le contenu texte de l'élément <li> créé.
+                        baad el egale signifie que elle va ecrire pour 
+                        la question et il enléve le q pour reste que le numero
+                        ensuite il ecrit la bonne réponse est : 
+                        yemchi yara fel correct Answers chniya shiha w yektebha */
+                    li.textContent = `Pour la question ${question.replace("q", "")}
+                    , la bonne réponse est : ${correctAnswers[question]}`;
+
+                    correctAnswersList.appendChild(li);/*les réponses correctes des questions mal répondues seront affichées.
+                                                       appendChild insère cet élément dans correctAnswersList.*/
+                }
+            });
+
+            // Afficher les résultats
+            scoreElement.textContent = `Vous avez obtenu ${score} / ${totalQuestions}`;/*tafichilek vous avez obtenu
+                                                                                        combient sur 10 sous forme de text */
+            results.style.display = "block"; // Afficher la section des résultats
+        }
+    </script>
+</body>
+<footer>
+    &copy; 2024 Mon Portfolio.
+</footer>
+
+</html>

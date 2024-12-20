@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Manifestations et Événements</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+
+        /*el partie foukaniya eli maktoub fiha mon parcours académique*/
+        header {
+            background-color: #652e70;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+
+        /*el partie eli fiha 3 cadres */
+        .container {
+            max-width: 1000px;
+            margin: 10px auto;/*une marge de 10 pixels en haut et en bas de l'élément.
+                               Centrage horizontal automatique */
+        }
+        
+        
+        /*les cadres*/
+        .event{
+            gap: 20px;/*l'espace entre chaque cadre */
+            background-color: #fff;
+            border-radius: 8px;/*Arrondit les coins du cadres*/
+            padding: 20px;/* les marges intérieures*/
+            margin-bottom: 20px;/* les marges extérieures*/
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);/*Ajoute une ombre portée à l'image
+                                                         (Décalage horizontal,Décalage vertical,flou)*/
+        }
+        .event h3 {
+            font-size: 1.8em;
+            color: #33159c;
+            margin-bottom: 1em;
+            border-bottom: 2px solid #33159c;/*el star eli taht el titre */
+
+            
+        }
+        .event p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 1.5em;
+        }
+
+    
+        /*la phrase*/
+        .description p {
+            font-size: 1.1rem;
+            color: #444;
+            text-align: justify;
+        }
+
+
+        /*les images */
+        .photo img {
+            gap: 2em;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        /* el partie el loutaniya  */
+        footer {
+            background-color: #652e70;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+        /*Retour à la page d'accueil*/
+        .back-to-home {
+            margin: 20px auto;
+            padding: 10px 20px;/*espace en haut et en bas 
+                                espace du droite et gauche */
+            background-color: #1d3557;
+            color: #fff;
+            text-decoration: none;/*menghir soulignement de la phrase*/
+            border-radius: 5px;/*Arrondit les coins du cadres*/
+            font-size: 1em;
+            text-align: center;
+        }
+
+
+        /* Couleur bleu clair au survol */
+        .back-to-home:hover {
+            background-color: #457b9d;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Mes Manifestations et Événements
+    </header>
+
+    <div class="container">
+        <section class="event-bloc">
+            <!-- Événement 1 -->
+            <div class="event">
+                <h3>Xtreme 2024</h3>
+                <p><strong>Date :</strong> 26 octobre 2024</p>
+                <p><strong>Lieu :</strong> Institut International de Technologie de Sfax</p>
+                <div class="description">
+                    <p>J'ai participé au hackathon <strong>Xtreme 2024</strong>, un événement international où des équipes de développeurs s'affrontent pour résoudre des défis technologiques complexes. Cette expérience m'a permis de collaborer avec des développeurs du monde entier et d'améliorer mes compétences en développement logiciel, en résolution de problèmes et en gestion de projets.</p>
+                </div>
+                <div class="photo">
+                    <img src="images/IMG_2403.jpg" alt="Photo de l'événement Xtreme">
+                    <img src="images/IMG_2404.jpg" alt="Photo de l'événement Xtreme">
+                    <img src="images/IMG_2405.jpg" alt="Photo de l'événement Xtreme">
+                    <img src="images/IMG_2401.jpg" alt="Photo de l'événement Xtreme">
+                    <img src="images/IMG_2402.jpg" alt="Photo de l'événement Xtreme">
+                </div>
+            </div>
+
+            <!-- Événement 2 -->
+            <div class="event">
+                <h3>JOB FAIR 10.0</h3>
+                <p><strong>Date :</strong> 16 novembre 2024</p>
+                <p><strong>Lieu :</strong> Institut International de Technologie de Sfax</p>
+                <div class="description">
+                    <p>J'ai participé à l'événement <strong>JOB FAIR 10.0</strong>, une foire de l'emploi organisée pour connecter les étudiants avec des entreprises innovantes. Cet événement m'a permis de découvrir des opportunités professionnelles et d'échanger avec des recruteurs de divers secteurs.</p>
+                </div>
+                <div class="photo">
+                    <img src="images/JOB FAIR.jpeg" alt="Photo de l'événement JOB FAIR 10.0">
+                </div>
+            </div>
+
+            <!-- Événement 3 -->
+            <div class="event">
+                <h3>Musique</h3>
+                <p><strong>Date :</strong> 22 octobre 2024</p>
+                <p><strong>Lieu :</strong> Maison de France</p>
+                <div class="description">
+                    <p>J'ai eu l'opportunité de participer à un événement mémorable organisé par mon professeur de français <strong>AYMEN DAGECH</strong> à la Maison de France. Avec mes collègues, nous étions un groupe de 10 étudiants réunis pour présenter une performance musicale. Chanter ensemble dans un cadre aussi prestigieux a été une expérience enrichissante qui a renforcé notre esprit d'équipe et notre confiance en nous-mêmes.</p>
+                </div>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-to-home">Retour à la page d'accueil</a>
+    </div>
+
+    <footer>
+        &copy; 2024 Mon Portfolio. 
+    </footer>
+
+</body>
+
+</html>

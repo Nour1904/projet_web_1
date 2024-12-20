@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Matières et Projets</title>
+    <style>
+        body {
+            font-family:sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        /*el partie foukaniya eli maktoub fiha mon parcours académique*/
+        header {
+            background-color: #652e70;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+         /*el partie eli fiha 3 cadres */
+         .container {
+            margin: 20px ;/*une marge de 10 pixels en haut et en bas de l'élément.
+                               Centrage horizontal automatique */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));/* Adapte le nombre de colonnes selon l'espace disponible.
+                                                                           Définit une largeur minimum de 300 pixels pour chaque colonne. Si l'espace est suffisant, 
+                                                                            colonne peut s'étendre jusqu'à occuper une fraction équitable de la largeur totale (1fr).*/
+            display: grid; 
+            flex-wrap: wrap; /* Permet aux colonnes de passer à la ligne suivante si l'espace est insuffisant */
+            gap: 20px;
+        }
+        .subject {
+            gap: 50px;/*l'espace entre chaque cadre */
+            background-color: #fff;
+            border-radius: 8px;/*Arrondit les coins du cadres*/
+            padding: 10px;/* les marges intérieures*/
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);/*Ajoute une ombre portée à l'image
+                                                         (Décalage horizontal,Décalage vertical,flou)*/
+        }
+        .subject h3 {
+            font-size: 1.8em;
+            color: #2a5298;
+            border-bottom: 2px solid #33159c;/*el star eli taht el titre */
+            padding-bottom:10px;
+
+        }
+        .subject p {
+            margin: 0.5em 0;
+            color: #555;
+        }
+
+        .links a {
+            display: inline-block;
+            color: #15487e;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        
+        /* el partie el loutaniya  */
+        footer {
+            background-color: #652e70;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+
+        /*Retour à la page d'accueil*/
+        .back-to-home {
+            margin-left: 15px;
+            margin-top: 30px;
+            padding: 10px 20px;/*espace en haut et en bas 
+                                espace du droite et gauche */
+            background-color: #1d3557;
+            color: #fff;
+            text-decoration: none;/*menghir soulignement de la phrase*/
+            border-radius: 5px;/*Arrondit les coins du cadres*/
+            font-size: 1em;
+            text-align: center;
+        }
+
+
+        /* Couleur bleu clair au survol */
+        .back-to-home:hover {
+            background-color: #457b9d;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+     Mes Matières et Projets Réalisés
+</header>
+
+<div class="container">
+    <!-- Systèmes Logiques -->
+    <div class="subject">
+        <h3>Systèmes Logiques</h3>
+        <p>Introduction à la conception et à l'analyse des circuits numériques : portes logiques, simplification des expressions booléennes, et construction de circuits combinatoires et séquentiels.</p>
+    </div>
+
+    <!-- Programmation Web 1 -->
+    <div class="subject">
+        <h3>Programmation Web 1</h3>
+        <p>Apprentissage des bases du développement web avec HTML, CSS, JavaScript, et la conception de projets dynamiques pour le web.</p>
+        <div class="links">
+            <a href="http://moodle.northeurope.cloudapp.azure.com/moodle/pluginfile.php/25832/mod_resource/content/2/TP1.pdf" target="_blank">TP1</a>
+            <a href="http://moodle.northeurope.cloudapp.azure.com/moodle/pluginfile.php/27045/mod_resource/content/1/TP2.pdf" target="_blank">TP2</a>
+            <a href="http://moodle.northeurope.cloudapp.azure.com/moodle/pluginfile.php/28528/mod_resource/content/1/TP3%202024.pdf" target="_blank">TP3</a>
+            <a href="http://moodle.northeurope.cloudapp.azure.com/moodle/pluginfile.php/29450/mod_resource/content/1/TP4%202024.pdf" target="_blank">TP4</a>
+            <a href="http://moodle.northeurope.cloudapp.azure.com/moodle/pluginfile.php/28250/mod_resource/content/3/Enonc%C3%A9%20projet%20Programmation%20Web%201.pdf" target="_blank">Projet Programmation Web 1</a>
+        </div>
+    </div>
+
+    <!-- Algorithmique et programmation procédurale C -->
+    <div class="subject">
+        <h3>Algorithmique et Programmation Procédurale (C)</h3>
+        <p>Étude des structures de contrôle, des fonctions, des tableaux, et des pointeurs pour résoudre des problèmes algorithmiques en langage C.</p>
+    </div>
+
+    <!-- Architectures des Ordinateurs -->
+    <div class="subject">
+        <h3>Architectures des Ordinateurs</h3>
+        <p>Exploration des composants matériels et logiciels des systèmes informatiques, tels que les processeurs, la mémoire, et les bus.</p>
+    </div>
+
+    <!-- Bases de Données -->
+    <div class="subject">
+        <h3>Bases de Données : Préparation à la Certification Oracle 1</h3>
+        <p>Introduction aux bases de données relationnelles et préparation pour la certification Oracle SQL Fundamentals.</p>
+    </div>
+
+    <!-- Comptabilité -->
+    <div class="subject">
+        <h3>Comptabilité</h3>
+        <p>Apprentissage des principes de base de la comptabilité, y compris les journaux, les bilans, et les comptes de résultats.</p>
+    </div>
+
+    <!-- Mathématiques pour l'Ingénieur -->
+    <div class="subject">
+        <h3>Mathématiques pour l'Ingénieur</h3>
+        <p>Approfondissement des outils mathématiques, tels que l'algèbre linéaire, les équations différentielles, et l'analyse numérique, appliqués à l'ingénierie.</p>
+    </div>
+
+    <!-- Préparation à la Certification DELF I -->
+    <div class="subject">
+        <h3>Préparation à la Certification DELF I</h3>
+        <p>Renforcement des compétences en langue française pour passer la certification DELF de niveau intermédiaire.</p>
+    </div>
+
+    <!-- Programmation Python -->
+    <div class="subject">
+        <h3>Programmation Python</h3>
+        <p>Développement de compétences en programmation Python pour la résolution de problèmes et l'automatisation des tâches.</p>
+        <div class="links">
+            <a href="http://moodle.northeurope.cloudapp.azure.com/moodle/pluginfile.php/24854/mod_resource/content/1/TP1.pdf" target="_blank">TP1</a>
+            <a href="http://moodle.northeurope.cloudapp.azure.com/moodle/pluginfile.php/25820/mod_resource/content/1/TP2_PP_1GI_IIT_2025.pdf" target="_blank">TP2</a>
+        </div>
+    </div>
+
+    <!-- Système d'Exploitation -->
+    <div class="subject">
+        <h3>Système d'Exploitation</h3>
+        <p>Introduction aux concepts des systèmes d'exploitation, tels que la gestion des processus, de la mémoire, et des fichiers.</p>
+    </div>
+
+    <!-- Transmission de Données -->
+    <div class="subject">
+        <h3>Transmission de Données</h3>
+        <p>Étude des principes fondamentaux des réseaux et des protocoles de communication, tels que TCP/IP et UDP.</p>
+    </div>
+
+   
+</div>
+<a href="index.html" class="back-to-home">Retour à la page d'accueil</a>
+
+<footer>
+    &copy; 2024 Mon Portfolio.
+</footer>
+
+</body>
+
+</html>

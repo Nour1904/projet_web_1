@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Mon Portfolio</title>
+</head>
+<style>
+/* Global Styles */
+* { /*Sélecteur universel qui applique des styles à tous les éléments.*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*la taille totale de l’élément reste ce que vous spécifiez */
+}
+/*style global du document*/
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;/*un espacement entre les lignes*/
+    color: #333;/*une couleur de texte*/
+    background-color: #f4f4f4;/*un fond pour le corps */
+}
+/* Hero Section */
+.hero-section {
+    height: 100%;/*La section d'accueil occupe 100% de la hauteur de l’écran*/
+    background: linear-gradient(to right, #e6ba72, #efe8d4); /*Fond en dégradé diagonal*/
+    display: flex;
+    flex-direction: column;/*Par défaut, les éléments d'un conteneur flex sont 
+                            disposés en ligne (horizontalement), mais ici, 
+                            on les dispose verticalement (de haut en bas).
+                            ( w houni puisque kolna column donc tji louta)*/
+    align-items: center;/*aligne tous les éléments au centre de l'axe transversal */
+    text-align: center;/*Tous les éléments textuels seront centrés*/
+    color: #000000;
+    padding: 0 20px;/*0 signifie qu'il n'y a pas de padding en haut et en bas.*/
+                    /*20px d'espace sur les côtés gauche et droit,*/
+}
+
+
+/*la mot de mon portfolio*/
+header h1{
+    padding: 20px ;
+    font-weight: bold;/*Texte en gras*/
+    font-size: 2.5em;
+}
+
+.hero-content {
+    max-width: 1000px;
+}
+/*Ma photo*/ 
+.profile-photo img {
+    width: 300px;/*la largeur de l'image*/
+    height: 300px;/*la hauteur de l'image*/
+    border-radius: 50%;/*Arrondit les coins de l'image pour créer un effet circulaire cette valeur 
+                        est suffisante pour width et height que j'ai choisi */
+    border: 5px dotted #5118ad;/* l'epaisseur , type , couleur */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);/*Ajoute une ombre portée à l'image
+                                                 (Décalage horizontal,Décalage vertical,flou)*/
+}
+
+
+/* Style pour le texte "Bienvenue" */
+.welcome-heading {
+       color: #644f10;
+}
+
+
+/*pour la taille du bienvenue et ma biographie */
+.hero-content h2 {
+    font-size: 2.5em;
+}
+
+
+/*la paragraphe de ma biographie */
+.hero-content p {
+    font-size: 1.2em;
+}
+
+.my-name {
+    font-size: 1em;  /* Taille de police pour le nom */
+    color: #bf00ff;    /* Couleur pour le nom */
+    font-weight: bold; /* Poids du texte pour rendre le nom plus visible */
+    text-decoration: underline;
+    
+}
+
+/* Conteneur principal */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;/*Permet aux éléments enfants de se réorganiser
+                    en plusieurs lignes si nécessaire lorsque l'espace 
+                    horizontal devient insuffisant.*/
+    justify-content: center;/*Centre les éléments enfants horizontalement dans le conteneur.*/
+    gap: 20px;/*l'espace entre chaque cadre */
+    padding: 20px;/*Ajoute un espace interne de 50px en haut et en bas,
+                        et 20px à gauche et à droite du conteneur */
+}
+
+
+/* Éléments du portfolio */
+.portfolio-item {
+    width: 200px;/*Définit la largeur des éléments*/
+    text-align: center;/*Centre le texte*/
+    background: rgba(255, 255, 255, 0.9);/*couleur du fond du cadre*/
+    padding: 20px;/*el espace eli bin el tawira wel cadre en haut */
+    border-radius: 10px;/*Arrondit les coins de l'image*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);/*Ajoute une ombre portée à l'image
+                                                 (Décalage horizontal,Décalage vertical,flou)*/
+}
+
+
+.portfolio-item:hover {
+    transform: translateY(-10px);/*Lors du survol de l'élément,
+                                   il se déplace vers le haut de 10px
+                                    pour créer un effet de "décollage".*/ 
+}
+
+
+/*pour les images entrent les cadres */
+.portfolio-item img {
+    width: 100px;/*la largeur de l'image*/
+    height: 100px;/*la hauteur de l'image*/
+    border-radius: 10px;/*les coins rond*/
+}
+
+
+/*el esem eli taht el taswira */
+.portfolio-item span {
+    font-size: 1.2rem;
+    font-weight: bold;/*Rend le text en gras.*/
+    color: #333;
+}
+.portfolio-item a {
+    text-decoration: none;/*Enlève le sous-lignages*/
+}
+
+
+/* Pied de page */
+footer {
+    text-align: center;/*thotha fel centre */
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+.social-icons a {
+            text-decoration: none;/*Enlève le sous-lignages*/
+            font-size: 1.5em;
+        }
+</style>
+
+<body>
+
+    <header class="hero-section">
+
+            <div class="hero-content">
+
+                <div class="profile-photo">
+                    <img src="images/466782166_3391089164356435_541582891024380469_n.jpg" alt="Photo de profil">
+                </div>
+                
+                <h2 class="welcome-heading">Bienvenue</h2>
+
+                <section>
+
+                    <h2>Ma biographie</h2>
+
+                    <p>
+                        Je m'appelle <span class="my-name">Nour Mezghani</span>, je suis une étudiante 
+                        en première année de Génie Informatique à <a href="http://www.iit.tn/">IIT</a>, 
+                        passionnée par le développement web et l'utilisation de la technologie pour 
+                        résoudre des problèmes concrets.J'aime combiner créativité et expertise technique 
+                        pour concevoir des solutions innovantes et conviviales. Mon engagement envers 
+                        l'apprentissage continu m'a poussée à explorer des domaines comme HTML,CSS et 
+                        JavaScript, constituant ainsi une base solide pour la création de projets web 
+                        impactants.Je crois que la collaboration et le sens des responsabilités sont
+                        essentiels pour réussir, et je suis enthousiaste à l'idée d'appliquer mes
+                        compétences pour contribuer à des initiatives significatives dans le domaine 
+                        du développement web et au-delà.</p>
+                </section>
+
+            
+            </div>
+
+                <h1>Mon Portfolio</h1>
+
+            <main>
+
+                <div class="portfolio-container">
+
+
+                    <!-- Section Parcours Académique -->
+                    <div class="portfolio-item">
+                        <a href="mon parcours .html">
+                            <img src="images/DALL·E 2024-12-09 21.42.29 - A professional and visually appealing illustration symbolizing a successful career journey. The image features a person confidently walking up a stair.webp" alt="Parcours Académique">
+                            <br>
+                            <span>Parcours</span>
+                        </a>
+                    </div>
+
+
+
+                    <!-- Section CV -->
+                    <div class="portfolio-item">
+                        <a href="mon CV.html">
+                            <img src="images/CV-Enginneer-Credit-CV-Enginneer.png" alt="CV">
+                            <br>
+                            <span>Mon CV</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Section passions -->
+                    <div class="portfolio-item">
+                        <a href="Passions.html">
+                            <img src="images/slide_1.jpg" alt="CV">
+                            <br>
+                            <span>Mes Passions et Qualités</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Section Compétences -->
+                    <div class="portfolio-item">
+                        <a href="evenement.html">
+                            <img src="images/comment_assurer_securite_evenement.jpg" alt="Compétences">
+                            <br>
+                            <span>evenement</span>
+                        </a>
+                    </div>
+
+                    
+
+        
+                    <!-- Section formulaire -->
+                    <div class="portfolio-item">
+                        <a href="sports.html">
+                            <img src="images/35458m0-fifa-world-cup-bazas-33430-gironde.webp" alt="CV">
+                            <br>
+                            <span>formulaire</span>
+                        </a>
+                    </div>
+                    
+
+
+                    <!-- Section compétences en info -->
+                    <div class="portfolio-item">
+                        <a href="mes compétences en informatique.html">
+                            <img src="images/DALL·E 2024-12-09 21.53.55 - A visually striking and professional image representing expertise in computer science and IT skills. The image features a person working on a futurist.webp" alt="CV">
+                            <br>
+                            <span>mes compétences</span>
+                        </a>
+                    </div>
+
+
+                    
+
+
+        
+                    <!-- Section matieres -->
+                    <div class="portfolio-item">
+                        <a href="matiere.html">
+                            <img src="images/DALL·E 2024-12-09 21.57.26 - A visually detailed and vibrant image representing various academic subjects and disciplines. The image includes symbols for mathematics (formulas and.webp" alt="Contact">
+                            <br>
+                            <span>matiere</span>
+                        </a>
+                    </div>
+
+
+
+                    <!-- Section témoiniage -->
+                    <div class="portfolio-item">
+                        <a href="témoiniage.html">
+                            <img src="images/images.jpg" alt="CV">
+                            <br>
+                            <span>Témoiniages</span>
+                        </a>
+                    </div>
+
+
+
+                    <!-- Section Contact -->
+                    <div class="portfolio-item">
+                        <a href="contact.html">
+                            <img src="images/telephone-mail.jpg" alt="CV">
+                            <br>
+                            <span>Contact</span>
+                        </a>
+                    </div>
+
+
+
+                    
+
+
+                </div>
+
+            </main>
+        
+            <footer>
+
+                <p>&copy; 2024 - Mon Portfolio</p>
+
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" title="Facebook">🌐</a>
+                    <a href="https://gmail.com" target="_blank" title="gmail">📧 </a>
+                    <a href="https://linkedin.com" target="_blank" title="LinkedIn">🔗</a>
+                    <a href="https://instagram.com" target="_blank" title="Instagram">📸</a>
+                </div>
+                
+            </footer>
+        
+    </header>
+
+    
+</body>
+</html>

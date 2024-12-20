@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Parcours Académique</title>
+    <style>
+        /*style global du document*/
+        body {
+            font-family: sans-serif;
+            margin: 0;/* les marges exterieures*/
+            padding: 0;/* les marges intérieures*/
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+
+        /*el partie foukaniya eli maktoub fiha mon parcours académique*/
+        header {
+            background-color: #652e70;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+
+        /*el partie eli fiha 3 cadres */
+        .container {
+            max-width: 1000px;
+            margin: 10px auto;/*une marge de 10 pixels en haut et en bas de l'élément.
+                               Centrage horizontal automatique */
+        }
+
+        /*les cadres*/
+        .degree {
+            gap: 20px;/*l'espace entre chaque cadre */
+            background-color: #fff;
+            border-radius: 8px;/*Arrondit les coins du cadres*/
+            padding: 20px;/* les marges intérieures*/
+            margin-bottom: 20px;/* les marges extérieures*/
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);/*Ajoute une ombre portée à l'image
+                                                         (Décalage horizontal,Décalage vertical,flou)*/
+        }
+
+
+        /*les photos dans les cadres */
+        .degree img {
+            max-width: 150px;
+            border-radius: 8px;
+        }
+
+
+        /*pour les titres qui son dans les cadres */
+        .degree h3 {
+            color: #1d3557;
+            margin: 0 0 10px;/*aucune marge supérieure 
+                               aucune marge à droite et gauche
+                               10 pixels pour la marges inferieurs */
+            font-size: 1.4em;
+        }
+
+
+        /*pour Depuis septembre 2024 : */
+        .degree p {
+            margin: 0 0 10px;/*aucune marge supérieure 
+                               aucune marge à droite et gauche
+                               10 pixels pour la marges inferieurs */
+            
+            line-height: 2;/* Espacement vertical entre les lignes */
+            color: #555;
+        }
+
+        /*okhor partie fel pages */
+        footer {
+            background-color: #652e70;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /*Retour à la page d'accueil*/
+        .back-to-home {
+            margin: 20px auto;
+            padding: 10px 20px;/*espace en haut et en bas 
+                                espace du droite et gauche */
+            background-color: #1d3557;
+            color: #fff;
+            text-decoration: none;/*menghir soulignement de la phrase*/
+            border-radius: 5px;/*Arrondit les coins du cadres*/
+            font-size: 1em;
+            text-align: center;
+        }
+
+
+        /* Couleur bleu clair au survol */
+        .back-to-home:hover {
+            background-color: #457b9d;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<header>
+    Mon Parcours Académique
+</header>
+
+<div class="container">
+    <section class="degree">
+        <img src="images/proxy-image (1).jfif" alt="Génie Informatique">
+        <div class="degree-content">
+            <h3>Formation actuelle : Génie Informatique</h3>
+            <p><strong>Depuis septembre 2024 :</strong> Institut International de Technologie de Sfax</p>
+            <p>Je poursuis une formation en Génie Informatique, développant des compétences en programmation, systèmes d'information et technologies innovantes.</p>
+        </div>
+    </section>
+
+    <section class="degree">
+        <img src="images/proxy-image.jfif" alt="Cycle Préparatoire">
+        <div class="degree-content">
+            <h3>Cycle Préparatoire en Physique Chimie</h3>
+            <p><strong>Septembre 2022 - Juin 2024 :</strong> Faculté des Sciences de Sfax</p>
+            <p>Ce cycle m'a permis de renforcer mes bases scientifiques avant ma spécialisation en informatique.</p>
+        </div>
+    </section>
+
+    <section class="degree">
+        <img src="images/proxy-image (2).jfif" alt="Baccalauréat Scientifique">
+        <div class="degree-content">
+            <h3>Baccalauréat Scientifique</h3>
+            <p><strong>Septembre 2021 - Juillet 2022 :</strong> Lycée Mahmoud Megdich, Sfax</p>
+            <p>Obtention de mon Baccalauréat Scientifique, étape marquante vers les études supérieures.</p>
+        </div>
+    </section>
+
+    <a href="index.html" class="back-to-home">Retour à la page d'accueil</a>
+</div>
+
+<footer>
+    &copy; 2024 Mon Portfolio. 
+</footer>
+
+</body>
+</html>

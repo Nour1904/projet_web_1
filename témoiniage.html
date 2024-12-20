@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Témoignages sur l'IIT</title>
+    <style>
+       /* Styles globaux */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fb;
+            color: #333;
+        }
+        
+        /*el partie foukaniya eli maktoub fiha mon parcours académique*/
+        header {
+            background-color: #652e70;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 10px auto;/*une marge de 10 pixels en haut et en bas de l'élément.
+                               Centrage horizontal automatique */
+        }
+
+
+        /* Section pour les membres de l'équipe */
+        .team {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .team-member {
+            flex: 1;
+            margin: 10px;
+        }
+        .team-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        /* Section pour la photo de IIT et la description */
+        .iit-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .iit-description {
+            flex: 2;
+        }
+        .iit-description h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .iit-description p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .iit{
+            max-width: 100%; /* L'image occupe toute la largeur du conteneur */
+            height: auto; /* Maintient les proportions de l'image */
+            display: block; /* Évite les espaces sous l'image */
+            margin: 10px 20px; /* Centre l'image */
+        }
+         
+        /* el partie el loutaniya  */
+        footer {
+            background-color: #652e70;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px ;
+        }
+
+        /*Retour à la page d'accueil*/
+        .back-to-home {
+            margin: 20px 50px;
+            padding: 10px 20px;/*espace en haut et en bas 
+                                espace du droite et gauche */
+            background-color: #1d3557;
+            color: #fff;
+            text-decoration: none;/*menghir soulignement de la phrase*/
+            border-radius: 5px;/*Arrondit les coins du cadres*/
+            font-size: 1em;
+            text-align: center;
+        }
+
+
+        /* Couleur bleu clair au survol */
+        .back-to-home:hover {
+            background-color: #457b9d;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Témoignages des étudiants de l'IIT
+    </header>
+    <div class="container">
+        
+        <!-- Section pour la photo de l'IIT et la description -->
+        <div class="iit-section">
+            <div class="photo">
+                <img src="images\DSC_38695-copie-scaled-1-640x288.webp" alt="Institut" class="iit">
+
+            </div>
+            <div class="iit-description">
+                <h3>Institut International de Technologie (IIT)</h3>
+                <p>L'Institut International de Technologie (IIT) est une institution académique de prenom,
+                     dédiée à la formation d'ingénieurs et de professionnels dans divers domaines de 
+                     la technologie et de l'innovation. Nous offrons une éducation de qualité, axée sur 
+                     la recherche, l'innovation, et le développement des compétences pratiques. IIT est 
+                     reconnu pour son environnement stimulant et ses partenariats internationaux qui 
+                     préparent nos étudiants à réussir dans le monde professionnel.</p>
+            </div>
+        </div>
+        <!-- Section pour les noms des professeurs et directeur -->
+        <div class="team">
+            <div class="team-member">
+                <img src="images/directeur.png" alt="Directeur" class="team-photo">
+                <p>Dr. Chafik Abid<br>DIRECTEUR GENERAL</p>
+            </div>
+            <div class="team-member">
+                <img src="images/mme.png" alt="Professeure 1 " class="team-photo">
+                <p>Dr.Ilhem Borcheni<br> DIRECTEUR DES ÉTUDES TECHNOLOGIQUES</p>
+            </div>
+            <div class="team-member">
+                <img src="images\taktak.jpeg" alt="professeur 2" class="team-photo">
+                <p>Dr. Said Taktak <br> DIRECTEUR DES ÉTUDES TIC </p>
+            </div>
+        </div>
+
+    </div>
+    <a href="index.html" class="back-to-home">Retour à la page d'accueil</a>
+
+
+    <footer>
+        &copy; 2024 Institut International de Technologie de Sfax
+    </footer>
+
+</body>
+</html>

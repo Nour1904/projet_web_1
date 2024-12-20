@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV</title>
+    <style>
+        
+        /*style global du document*/
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+
+        /*el partie foukaniya eli maktoub fiha mon parcours académique*/
+        header {
+            background-color: #652e70;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+
+        /*pour la partie du CV*/
+        .container {
+            max-width: 1000px;
+            margin: 30px auto; /*espace en haut et en bas a l'interieures
+                                 auto heki bech tekhou wost ken matamethech tji fel isar */
+            padding: 20px;/*thot 20px pour tous les espacements a l'exterieurs*/
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);/*Ajoute une ombre portée à l'image
+                                                         (Décalage horizontal,Décalage vertical,flou)*/
+            border-radius: 8px;/*Arrondit les coins du cadres*/
+        }
+
+
+        /*taswiret el CV */
+        .cv-image {
+            display: block;
+            max-width: 100%;/*taille de la photo*/
+            margin: 20px auto;/*espace en haut et en bas */
+            border-radius: 10px;/*Arrondit les coins du cadres*/
+        }
+        
+
+        /*el partie el loutaniya */
+        footer {
+            background-color: #652e70;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+        /*Retour à la page d'accueil*/
+        .back-to-home {
+            margin: 20px auto;
+            padding: 10px 20px;/*espace en haut et en bas 
+                                espace du droite et gauche */
+            background-color: #1d3557;
+            color: #fff;
+            text-decoration: none;/*menghir soulignement de la phrase*/
+            border-radius: 5px;/*Arrondit les coins du cadres*/
+            font-size: 1em;
+            text-align: center;
+        }
+
+
+        /* Couleur bleu clair au survol */
+        .back-to-home:hover {
+            background-color: #457b9d;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    Mon CV
+</header>
+
+<div class="container">
+
+    <section class="cv-section">
+        <!-- Affichage de l'image du CV -->
+        <img src="images/CV.jpeg" alt="Mon CV" class="cv-image">
+    </section>
+    
+    <a href="index.html" class="back-to-home">Retour à la page d'accueil</a>
+
+</div>
+
+<footer>
+    &copy; 2024 Mon Portfolio.
+</footer>
+
+</body>
+</html>

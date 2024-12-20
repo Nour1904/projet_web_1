@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Compétences Informatiques</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            
+        }
+
+       /*el partie foukaniya eli maktoub fiha mon parcours académique*/
+       header {
+            background-color: #652e70;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+
+        /*el partie eli fiha 3 cadres */
+        .container {
+            max-width: 1000px;
+            margin: 10px auto;/*une marge de 10 pixels en haut et en bas de l'élément.
+                               Centrage horizontal automatique */
+        }
+        
+        .section {
+            gap: 20px;/*l'espace entre chaque cadre */
+            background-color: #fff;
+            border-radius: 8px;/*Arrondit les coins du cadres*/
+            padding: 20px;/* les marges intérieures*/
+            margin-bottom: 20px;/* les marges extérieures*/
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);/*Ajoute une ombre portée à l'image
+                                                         (Décalage horizontal,Décalage vertical,flou)*/
+        }
+        .section p{
+            font-size: 1.2em;
+        }
+       
+        /*le grand titre dans chaque cadre */
+        h2 {
+            font-size: 2.2em;
+            color: #2C3E50;
+            margin-bottom: 1em;
+            border-bottom: 2px solid #33159c;/*el star eli taht el titre */
+            padding-bottom: 0.5em;
+            
+        }
+
+
+        /* Skills List */
+        .skills-list {
+            list-style-type: none;/*manghir marqueures*/
+        }
+        .skills-list li {
+            background-color: #f9fafb;
+            border: 1px solid #e1e1e1;
+            padding: 12px 20px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+        .skills-list li:hover {
+            background-color: #e8eff5;
+        }
+
+
+        /* el partie el loutaniya  */
+        footer {
+            background-color: #652e70;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+        /*Retour à la page d'accueil*/
+        .back-to-home {
+            margin: 20px auto;
+            padding: 10px 20px;/*espace en haut et en bas 
+                                espace du droite et gauche */
+            background-color: #1d3557;
+            color: #fff;
+            text-decoration: none;/*menghir soulignement de la phrase*/
+            border-radius: 5px;/*Arrondit les coins du cadres*/
+            font-size: 1em;
+            text-align: center;
+        }
+
+
+        /* Couleur bleu clair au survol */
+        .back-to-home:hover {
+            background-color: #457b9d;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Mes Compétences Informatiques
+    </header>
+
+    <div class="container">
+        <!-- Section 1 : Langages de Programmation -->
+        <section class="section">
+            <h2>Langages de Programmation</h2>
+            <p>Je maîtrise plusieurs langages de programmation utilisés dans le développement d'applications back-end et front-end.</p>
+            <ul class="skills-list">
+                <li><strong> Python </strong></li>
+                <li><strong> JavaScript </strong></li>
+                <li><strong> C </strong></li>
+                <li><strong> HTML </strong></li>
+                <li><strong> CSS </strong></li>
+                <li><strong> SQL </strong></li>
+            </ul>
+        </section>
+
+        <!-- Section 2 : Systèmes de Gestion de Bases de Données (SGBD) -->
+        <section class="section">
+            <h2>Systèmes de Gestion de Bases de Données (SGBD)</h2>
+            <p>Je maîtrise les systèmes de gestion de bases de données pour concevoir, gérer et manipuler les données efficacement.</p>
+            <ul class="skills-list">
+                <li><strong> SQlite</strong></li>
+                <li><strong> Oracle </strong></li>
+            </ul>
+        </section>
+
+        <!-- Section 3 : Environnements de développement -->
+        <section class="section">
+            <h2>Environnements de Développement</h2>
+            <p>J'ai travaillé dans divers environnements de développement pour créer des applications web, des logiciels et des solutions logicielles adaptées aux besoins des clients.</p>
+            <ul class="skills-list">
+                <li><strong> Visual Studio Code</strong></li>
+            </ul>
+        </section>
+
+        <!-- Section 4 : Outils de Versionnement -->
+        <section class="section">
+            <h2>Outils de Versionnement</h2>
+            <p>J'utilise des outils de gestion de version pour suivre les modifications du code et collaborer efficacement avec les autres développeurs.</p>
+            <ul class="skills-list">
+                <li><strong>GitHub</strong></li>
+            </ul>
+        </section>
+
+        <a href="index.html" class="back-to-home">Retour à la page d'accueil</a>
+    </div>
+
+    <footer>
+        &copy; 2024 Mon Portfolio. Tous droits réservés.
+    </footer>
+
+</body>
+
+</html>

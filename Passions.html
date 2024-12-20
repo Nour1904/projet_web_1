@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Passions et Qualités</title>
+    <style>
+
+        /* Style général */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+
+        /*el partie foukaniya eli maktoub fiha mon parcours académique*/
+        header {
+            background-color: #652e70;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+
+        /*  le cadre  */
+        .container {
+            max-width: 1000px;
+            margin: 10px auto;/*une marge de 10 pixels en haut et en bas de l'élément.
+                               Centrage horizontal automatique */
+        }
+
+        .section {
+            gap: 20px;/*l'espace entre chaque cadre */
+            background-color: #fff;
+            border-radius: 8px;/*Arrondit les coins du cadres*/
+            padding: 20px;/* les marges intérieures*/
+            margin-bottom: 20px;/* les marges extérieures*/
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);/*Ajoute une ombre portée à l'image
+                                                         (Décalage horizontal,Décalage vertical,flou)*/
+        }
+
+        /*pour les grande mot dans le cadre*/
+        .section h3 {
+            font-size: 1.8em;
+            color: #2a5298;
+            border-bottom: 2px solid #33159c;/*el star eli taht el titre */
+            padding-bottom:10px;
+
+            
+        }
+
+
+        /*la phrase au dessus les photo*/
+        .section p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            padding: auto;
+        }
+
+
+        /* pour la partie des photos */
+        .gallery-g {
+            display: grid;
+            grid-template-columns: repeat(3,1fr); /* 1fr pour assurer une distribution équitable de
+                                                   l'espace disponible entre les colonnes.
+                                                   3 colonne */
+            gap: 1.5em;
+        }
+
+
+        /*pour chaque partie des photos */
+        .gallery{
+            text-align: center;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1em;
+            transform: translateY(-10px);
+        }
+        .gallery:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+
+        /*pour chaque photo */
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+
+        /*pour chque ligne qui est au dessus le la photo*/
+        .gallery p {
+            margin: 0;
+            font-weight: bold;
+            color: #1e3c72;
+        }
+
+        
+        /*Retour à la page d'accueil*/
+        .back-to-home {
+            margin: 20px auto;
+            padding: 10px 20px;/*espace en haut et en bas 
+                                espace du droite et gauche */
+            background-color: #1d3557;
+            color: #fff;
+            text-decoration: none;/*menghir soulignement de la phrase*/
+            border-radius: 5px;/*Arrondit les coins du cadres*/
+            font-size: 1em;
+            text-align: center;
+        }
+
+
+        /* Couleur bleu clair au survol */
+        .back-to-home:hover {
+            background-color: #457b9d;
+        }
+
+        /*el partie el loutaniya */
+        footer {
+            background-color: #652e70;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    Mes Passions et Qualités
+</header>
+
+<div class="container">
+
+    <!-- Passions -->
+    <section class="section">
+        <h3>Passions</h3>
+        <p>Je suis passionné par la technologie, la musique, et la lecture. 
+            Ces passions nourrissent ma créativité et mon développement personnel.</p>
+        <div class="gallery-g">
+            <div class="gallery">
+                <p>Technologie</p>
+                <img src="images/technologie-liberatrice-scaled.jpeg" alt="Technologie">
+            </div>
+            <div class="gallery">
+                <p>Musique</p>
+                <img src="images/how-to-warm-up-your-singing-voice-1559238633.jpg" alt="Musique">
+            </div>
+            <div class="gallery">
+                <p>Lecture</p>
+                <img src="images/10-livres-a-lire-avant-de-lancer-sa-startup.webp" alt="Livres">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sports préférés -->
+    <section class="section">
+        <h3>Sports Préférés</h3>
+        <p>Les sports que je pratique et admire, comme le basketball, le tennis, et les échecs, me permettent de rester actif et concentré.</p>
+        <div class="gallery-g">
+            <div class="gallery">
+                <p>Football</p>
+                <img src="images/e1990b23-42fd-499d-9fae-c0b1bbcd5762.avif" alt="Football">
+            </div>
+            <div class="gallery">
+                <p>Tennis</p>
+                <img src="images/image-from-rawpixel-id-413445-jpeg-scaled.jpg" alt="Tennis">
+            </div>
+            <div class="gallery">
+                <p>Échecs</p>
+                <img src="images/handmade-wooden-chess_1024x1024.webp" alt="Échecs">
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualités -->
+    <section class="section">
+        <h3>Qualités</h3>
+        <p>Je suis dynamique, persévérant et curieux. Mon esprit d'équipe et ma créativité me permettent d'exceller dans mes projets.</p>
+    </section>
+    
+    <a href="index.html" class="back-to-home">Retour à la page d'accueil</a>
+</div>
+
+<footer>
+    &copy; 2024 Mon Portfolio.
+</footer>
+
+</body>
+</html>
